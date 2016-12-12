@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    tools:context="com.erikarumbold.pract3.MainActivity"
+    android:background="@drawable/background">
+
+    <!-- survey fragment -->
+    <fragment
+        android:id="@+id/fragment1"
+        android:layout_width="0dp"
+        android:layout_weight="1.05"
+        android:layout_height="wrap_content"
+        class="com.erikarumbold.pract3.SurveyFragment"
+        tools:layout="@layout/fragment_survey">
+    </fragment>
+
+    <!-- results fragment -->
+    <fragment
+        android:id="@+id/fragment2"
+        android:layout_width="0dp"
+        android:layout_weight="0.83"
+        android:layout_height="match_parent"
+        class="com.erikarumbold.pract3.DisplayFragment"
+        tools:layout="@layout/fragment_results">
+    </fragment>
+
+
+</LinearLayout>

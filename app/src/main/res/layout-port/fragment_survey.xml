@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dnd"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dnd"
+        android:cropToPadding="false"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_prompt"
+        android:id="@+id/nameTitle"
+        android:layout_below="@+id/dnd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName|textCapWords"
+        android:hint="@string/enter_name"
+        android:ems="10"
+        android:id="@+id/name"
+        android:layout_below="@+id/nameTitle"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/saves"
+        android:id="@+id/saveTitle"
+        android:layout_below="@+id/classGroup"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saveTitle"
+        android:layout_centerHorizontal="true"
+        android:columnCount="3"
+        android:rowCount="2"
+        android:id="@+id/saveGrid">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strength"
+            android:textSize="18sp"
+            android:id="@+id/strength" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dexterity"
+            android:textSize="18sp"
+            android:id="@+id/dexterity" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/constitution"
+            android:textSize="18sp"
+            android:id="@+id/constitution" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/intelligence"
+            android:textSize="18sp"
+            android:id="@+id/intelligence" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wisdom"
+            android:textSize="18sp"
+            android:id="@+id/wisdom" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/charisma"
+            android:textSize="18sp"
+            android:id="@+id/charisma" />
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age_select"
+        android:id="@+id/ageTitle"
+        android:layout_below="@+id/saveGrid"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ageBar"
+        android:layout_below="@+id/ageTitle"
+        android:max="490"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:id="@+id/button"
+        android:textSize="20sp"
+        android:background="@color/restart"
+        android:textColor="@color/restartText"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/saveTitle"
+        android:layout_toStartOf="@+id/saveTitle"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp" />
+
+    <Button
+        android:text="@string/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/restart"
+        android:textColor="@color/restartText"
+        android:id="@+id/abt"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/saveTitle"
+        android:layout_toEndOf="@+id/saveTitle" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/raceGroup"
+        android:layout_below="@+id/raceTitle"
+        android:layout_alignLeft="@+id/raceTitle"
+        android:layout_alignStart="@+id/raceTitle">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/elf"
+            android:textSize="15sp"
+            android:id="@+id/elf"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dwarf"
+            android:id="@+id/dwarf"
+            android:textSize="15sp"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/human"
+            android:textSize="15sp"
+            android:id="@+id/human"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/half_orc"
+            android:textSize="15sp"
+            android:id="@+id/half_orc"
+            android:layout_weight="1" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/class_select"
+        android:id="@+id/classTitle"
+        android:textSize="20sp"
+        android:layout_below="@+id/name"
+        android:layout_alignRight="@+id/abt"
+        android:layout_alignEnd="@+id/abt" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/classGroup"
+        android:layout_below="@+id/classTitle"
+        android:layout_alignRight="@+id/name"
+        android:layout_alignEnd="@+id/name">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fighter"
+            android:textSize="15sp"
+            android:id="@+id/fighter"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ranger"
+            android:textSize="15sp"
+            android:id="@+id/ranger"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wizard"
+            android:textSize="15sp"
+            android:id="@+id/wizard"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bard"
+            android:textSize="15sp"
+            android:id="@+id/bard"
+            android:layout_weight="1" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/race_select"
+        android:id="@+id/raceTitle"
+        android:textSize="20sp"
+        android:layout_below="@+id/name"
+        android:layout_toLeftOf="@+id/ageTitle"
+        android:layout_toStartOf="@+id/ageTitle" />
+
+</RelativeLayout>

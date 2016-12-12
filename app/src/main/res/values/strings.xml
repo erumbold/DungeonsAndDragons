@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">DnD Character Creator</string>
+
+    <!-- TITLES -->
+    <string name="name_prompt">What is your name?</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="race_select">Race:</string>
+    <string name="class_select">Class:</string>
+    <string name="saves">Saves:</string>
+    <string name="age_select">Enter Your Age:</string>
+    <string name="reset">Submit</string>
+    <string name="info">About</string>
+
+
+    <!-- RACE RadioGroup -->
+    <string name="elf">Elf</string>
+    <string name="dwarf">Dwarf</string>
+    <string name="human">Human</string>
+    <string name="half_orc">Half-Orc</string>
+
+    <!-- CLASS RadioGroup -->
+    <string name="ranger">Ranger</string>
+    <string name="bard">Bard</string>
+    <string name="fighter">Fighter</string>
+    <string name="wizard">Wizard</string>
+
+    <!-- SAVES Checkboxes -->
+    <string name="strength">Strength</string>
+    <string name="dexterity">Dexterity</string>
+    <string name="constitution">Constitution</string>
+    <string name="intelligence">Intelligence</string>
+    <string name="wisdom">Wisdom</string>
+    <string name="charisma">Charisma</string>
+
+    <!-- ABOUT -->
+    <string name="back">Back</string>
+    <string name="about">This app creates a starter Dungeons and Dragons Character. Choose from a multitude of race, class, saving ability, and age combinations for complete customization. Save it for later and make more!</string>
+
+</resources>
